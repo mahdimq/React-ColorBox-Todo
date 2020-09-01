@@ -4,9 +4,10 @@ import NewTodoForm from './NewTodoForm';
 import Todo from './Todo';
 
 function TodoList() {
-	const INITIAL_STATE = [{ id: uuid(), todo: '' }];
+	// COMMENTED OUT FOR TESTING
+	// const INITIAL_STATE = [{ id: uuid(), todo: '' }];
 
-	const [todos, setTodos] = useState(INITIAL_STATE);
+	const [todos, setTodos] = useState([]);
 
 	const addTodo = (newTodo) => {
 		setTodos((todos) => [...todos, { id: uuid(), ...newTodo }]);

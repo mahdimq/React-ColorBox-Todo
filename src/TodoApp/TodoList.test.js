@@ -18,7 +18,7 @@ it('can add a new todo', function () {
 	expect(queryByText('X')).not.toBeInTheDocument();
 
 	const input = getByLabelText('Enter Todo');
-	const submitBtn = queryByText('Add todo!');
+	const submitBtn = queryByText('Add todo');
 
 	// fill out the form
 	fireEvent.change(input, { target: { value: 'Iron Clothes' } });

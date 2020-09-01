@@ -20,12 +20,6 @@ exports[`matches snapshot 1`] = `
         Add todo
       </button>
     </form>
-    <div>
-      <span />
-      <button>
-        X
-      </button>
-    </div>
   </div>
 </DocumentFragment>
 `;

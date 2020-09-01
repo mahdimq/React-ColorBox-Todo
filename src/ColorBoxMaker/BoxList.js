@@ -5,27 +5,28 @@ import NewBoxForm from './NewBoxForm';
 import './BoxList.css';
 
 function BoxList() {
-	const INTIAL_STATE = [
-		{
-			id: uuid(),
-			width: 100,
-			height: 100,
-			backgroundColor: 'red'
-		},
-		{
-			id: uuid(),
-			width: 100,
-			height: 100,
-			backgroundColor: 'orange'
-		},
-		{
-			id: uuid(),
-			width: 100,
-			height: 100,
-			backgroundColor: 'slateblue'
-		}
-	];
-	const [boxSpecs, setBoxSpecs] = useState(INTIAL_STATE);
+	// COMMENTED OUT FOR TESTING PURPOSES
+	// const [] = [
+	// 	{
+	// 		id: uuid(),
+	// 		width: 100,
+	// 		height: 100,
+	// 		backgroundColor: 'red'
+	// 	},
+	// 	{
+	// 		id: uuid(),
+	// 		width: 100,
+	// 		height: 100,
+	// 		backgroundColor: 'orange'
+	// 	},
+	// 	{
+	// 		id: uuid(),
+	// 		width: 100,
+	// 		height: 100,
+	// 		backgroundColor: 'slateblue'
+	// 	}
+	// ];
+	const [boxSpecs, setBoxSpecs] = useState([]);
 	const addBox = (newBox) => {
 		setBoxSpecs((boxSpecs) => [...boxSpecs, { id: uuid(), ...newBox }]);
 	};
